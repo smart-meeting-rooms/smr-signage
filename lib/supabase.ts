@@ -8,13 +8,18 @@ export const supabase = createClient(url, key);
 export type Screen = {
   id: string;
   name: string;
-  location: string;
-  profile_id: string | null;
+  slug: string;
+  device_key: string;
+  timezone: string;
+  orientation: string;
   active: boolean;
+  last_seen_at: string | null;
+  created_at: string;
 };
 
-export type Profile = {
+export type WeatherLocation = {
   id: string;
+  organization_id: string;
   name: string;
   lat: number;
   lon: number;
@@ -23,16 +28,45 @@ export type Profile = {
   surf_lon: number | null;
 };
 
-export type OrgValue = {
+export type CompanyValue = {
   id: string;
-  org_id: string;
-  text: string;
+  organization_id: string;
+  title: string;
+  body: string;
   sort_order: number;
+  active: boolean;
+  created_at: string;
 };
 
-export type OrgQuote = {
+export type Quote = {
   id: string;
-  org_id: string;
-  text: string;
-  author: string | null;
+  organization_id: string;
+  body: string;
+  attribution: string | null;
+  active: boolean;
+  sort_order: number;
+  created_at: string;
 };
+
+export type DisplayProfile = {
+  id: string;
+  organization_id: string;
+  screen_id: string;
+  name: string;
+  rotation_seconds: number;
+  show_weather: boolean;
+  show_surf: boolean;
+  show_traffic: boolean;
+  show_radio: boolean;
+  show_quotes: boolean;
+  show_values: boolean;
+  stream_url: string | null;
+  stream_name: string | null;
+  theme: string;
+  created_at: string;
+};
+
+// Legacy aliases for backward compatibility
+export type Profile = WeatherLocation;
+export type OrgValue = CompanyValue;
+export type OrgQuote = Quote;
