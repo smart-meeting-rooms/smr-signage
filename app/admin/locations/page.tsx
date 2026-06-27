@@ -1,9 +1,9 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { supabase, Profile } from '../../../lib/supabase';
+import { supabase, WeatherLocation } from '../../../lib/supabase';
 
 export default function LocationsPage() {
-  const [profiles, setProfiles] = useState<Profile[]>([]);
+  const [locations, setLocations] = useState<WeatherLocation[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [editingId, setEditingId] = useState<string | null>(null);
@@ -14,9 +14,9 @@ export default function LocationsPage() {
 
   async function fetchData() {
     setLoading(true);
-    const { data, error } = await supabase.from('profiles').select('*').order('name');
+    const { data, error } = await supabase.from('weather_locations').select('*').order('name');
     if (error) setError(error.message);
-    else setProfiles(data || []);
+    else setLocations(data || []);
     setLoading(false);
   }
 
@@ -31,10 +31,10 @@ export default function LocationsPage() {
       surf_lon: form.surf_lon ? parseFloat(form.surf_lon) : null,
     };
     if (editingId) {
-      const { error } = await supabase.from('profiles').update(payload).eq('id', editingId);
+      const { error } = await supabase.from('weather_locations').update(payload).eq('id', editingId);
       if (error) { setError(error.message); return; }
     } else {
-      const { error } = await supabase.from('profiles').insert(payload);
+      const { error } = await supabase.from('weather_locations').insert(payload);
       if (error) { setError(error.message); return; }
     }
     setEditingId(null);
@@ -44,15 +44,15 @@ export default function LocationsPage() {
   }
 
   async function handleDelete(id: string) {
-    if (!confirm('Delete this location? Screens using this profile will lose their location.')) return;
-    const { error } = await supabase.from('profiles').delete().eq('id', id);
+    if (!confirm('Delete this location?')) return;
+    const { error } = await supabase.from('weather_locations').delete().eq('id', id);
     if (error) setError(error.message);
     else fetchData();
   }
 
-  function startEdit(p: Profile) {
-    setEditingId(p.id);
-    setForm({ name: p.name, lat: String(p.lat), lon: String(p.lon), timezone: p.timezone, surf_lat: p.surf_lat != null ? String(p.surf_lat) : '', surf_lon: p.surf_lon != null ? String(p.surf_lon) : '' });
+  function startEdit(loc: WeatherLocation) {
+    setEditingId(loc.id);
+    setForm({ name: loc.name, lat: String(loc.lat), lon: String(loc.lon), timezone: loc.timezone, surf_lat: loc.surf_lat != null ? String(loc.surf_lat) : '', surf_lon: loc.surf_lon != null ? String(loc.surf_lon) : '' });
     setShowAdd(false);
   }
 
@@ -64,12 +64,12 @@ export default function LocationsPage() {
 
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-[#e2e8f0] p-8">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-w-4xl mx-auto">
         <div className="flex items-center justify-between mb-6">
           <div>
-            <a href="/admin" className="text-[#64748b] hover:text-white text-sm">← Admin</a>
-            <h1 className="text-2xl font-bold text-white mt-1">📍 Locations</h1>
-            <p className="text-[#64748b] text-sm mt-1">Profiles define weather locations assigned to screens</p>
+            <a href="/admin" className="text-[#64748b] hover:text-white text-sm">&#8592; Admin</a>
+            <h1 className="text-2xl font-bold text-white mt-1">&#128205; Locations</h1>
+            <p className="text-[#64748b] text-sm mt-1">Weather locations for screens</p>
           </div>
           <button onClick={startAdd} className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-medium">+ Add Location</button>
         </div>
@@ -113,24 +113,20 @@ export default function LocationsPage() {
         )}
 
         {loading ? (
-          <div className="text-[#64748b] text-center py-12">Loading...</div>
-        ) : profiles.length === 0 ? (
-          <div className="text-[#64748b] text-center py-12">No locations yet. Add your first location above.</div>
+          <p className="text-[#64748b]">Loading...</p>
+        ) : locations.length === 0 ? (
+          <p className="text-[#64748b]">No locations yet. Add your first location above.</p>
         ) : (
           <div className="space-y-3">
-            {profiles.map(p => (
-              <div key={p.id} className="bg-[#12121a] border border-[#1e1e2e] rounded-xl p-4 flex items-center justify-between">
+            {locations.map(loc => (
+              <div key={loc.id} className="bg-[#12121a] border border-[#1e1e2e] rounded-xl p-4 flex items-center justify-between">
                 <div>
-                  <span className="font-semibold text-white">{p.name}</span>
-                  <div className="text-sm text-[#64748b] mt-1 flex gap-4">
-                    <span>Lat: {p.lat}, Lon: {p.lon}</span>
-                    <span>{p.timezone}</span>
-                    {p.surf_lat && <span>Surf: {p.surf_lat},{p.surf_lon}</span>}
-                  </div>
+                  <p className="font-semibold text-white">{loc.name}</p>
+                  <p className="text-sm text-[#64748b]">Lat: {loc.lat}, Lon: {loc.lon} &nbsp; {loc.timezone}{loc.surf_lat && <span> &nbsp; Surf: {loc.surf_lat},{loc.surf_lon}</span>}</p>
                 </div>
                 <div className="flex gap-2">
-                  <button onClick={() => startEdit(p)} className="px-3 py-1.5 bg-[#1e1e2e] hover:bg-blue-900/50 text-white rounded-lg text-sm">Edit</button>
-                  <button onClick={() => handleDelete(p.id)} className="px-3 py-1.5 bg-[#1e1e2e] hover:bg-red-900/50 text-red-400 rounded-lg text-sm">Delete</button>
+                  <button onClick={() => startEdit(loc)} className="px-3 py-1.5 bg-[#1e1e2e] hover:bg-blue-900/50 text-white rounded-lg text-sm">Edit</button>
+                  <button onClick={() => handleDelete(loc.id)} className="px-3 py-1.5 bg-[#1e1e2e] hover:bg-red-900/50 text-red-400 rounded-lg text-sm">Delete</button>
                 </div>
               </div>
             ))}
