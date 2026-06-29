@@ -31,6 +31,12 @@ export default function AdminPage() {
             <p className="text-[#64748b] text-sm mb-4">Set weather and surf locations per screen</p>
             <div className="text-[#64748b] text-sm italic">Manage location profiles with lat/lon coordinates</div>
           </a>
+
+          <a href="/admin/deals" className="bg-[#12121a] border border-[#1e1e2e] rounded-2xl p-6 hover:border-blue-500 transition-colors block md:col-span-2">
+            <h2 className="text-lg font-semibold text-white mb-1">📈 Deal Tracker</h2>
+            <p className="text-[#64748b] text-sm mb-4">Track open opportunities through to close, with Outlook email sync</p>
+            <div className="text-[#64748b] text-sm italic">Pipeline, contacts, assigned actions and linked emails (sign-in required)</div>
+          </a>
         </div>
 
         <div className="mt-10 bg-[#12121a] border border-[#1e1e2e] rounded-2xl p-6">

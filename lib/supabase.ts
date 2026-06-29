@@ -70,3 +70,90 @@ export type DisplayProfile = {
 export type Profile = WeatherLocation;
 export type OrgValue = CompanyValue;
 export type OrgQuote = Quote;
+
+// ---------------------------------------------------------------------------
+// Deal Tracker (CRM) types
+// ---------------------------------------------------------------------------
+export type CrmProfile = {
+  id: string;
+  organization_id: string;
+  full_name: string | null;
+  email: string | null;
+  avatar_url: string | null;
+  role: string;
+  created_at: string;
+};
+
+export type CrmStage = {
+  id: string;
+  organization_id: string;
+  name: string;
+  sort_order: number;
+  is_won: boolean;
+  is_lost: boolean;
+  created_at: string;
+};
+
+export type CrmContact = {
+  id: string;
+  organization_id: string;
+  name: string;
+  email: string | null;
+  phone: string | null;
+  company: string | null;
+  title: string | null;
+  notes: string | null;
+  created_at: string;
+};
+
+export type CrmDeal = {
+  id: string;
+  organization_id: string;
+  title: string;
+  description: string | null;
+  value: number;
+  currency: string;
+  stage_id: string | null;
+  status: 'open' | 'won' | 'lost';
+  owner_id: string | null;
+  primary_contact_id: string | null;
+  expected_close_date: string | null;
+  closed_at: string | null;
+  created_at: string;
+  updated_at: string;
+};
+
+export type CrmActivity = {
+  id: string;
+  organization_id: string;
+  deal_id: string | null;
+  type: 'task' | 'call' | 'meeting' | 'email' | 'note';
+  title: string;
+  notes: string | null;
+  assigned_to: string | null;
+  due_date: string | null;
+  completed: boolean;
+  completed_at: string | null;
+  created_by: string | null;
+  created_at: string;
+};
+
+export type CrmEmail = {
+  id: string;
+  organization_id: string;
+  deal_id: string;
+  graph_message_id: string | null;
+  internet_message_id: string | null;
+  subject: string | null;
+  from_name: string | null;
+  from_address: string | null;
+  to_addresses: string[];
+  cc_addresses: string[];
+  direction: 'inbound' | 'outbound';
+  body_preview: string | null;
+  web_link: string | null;
+  sent_at: string | null;
+  received_at: string | null;
+  synced_by: string | null;
+  created_at: string;
+};
