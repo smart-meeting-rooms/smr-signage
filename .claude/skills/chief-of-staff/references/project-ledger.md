@@ -17,9 +17,12 @@ not directly stated and `(confirm)` when it needs verifying on the next real run
   managed support (start with existing 35 sites); mutual referral; SMR PM/SA team
   on CMC's Africa projects; Martin's Law emergency-signage crossover. Reply owed
   + Fyxer proposed Thu 12:30–13:00 for a roundtable with Luke.
-  → **Waiting on CMC:** Matt still owes the **Connect/Protect PDF** (promised on
-    13 Jul call, not yet received) — needed to finalise joint pricing.
-  → Deliverable drafted: "SMR × CMC — How We Combine" (see scratchpad).
+  → Company confirmed: **CMC Consultancy Partnership** (referrals@cmc.partners).
+  → Connect/Protect overview PDF **received 15 Jul** (scope confirmed; no pricing).
+  → **Still waiting on CMC:** Connect & Protect **rate card / pricing** to finalise
+    the revenue-share; agree referral terms both ways; pick a pilot site.
+  → Deliverable drafted + updated with confirmed scope: "SMR × CMC — How We
+    Combine" (scratchpad).
 - **Midwich export** — Sinead needs a commercial invoice showing SMR as exporter
   + GB EORI before the (paid) ICG screen ships. → Tam.
 - **BrightSign (ICGAM)** — renewal expires 17 Jul; order to
