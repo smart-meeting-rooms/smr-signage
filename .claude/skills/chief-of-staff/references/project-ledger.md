@@ -12,8 +12,14 @@ not directly stated and `(confirm)` when it needs verifying on the next real run
 ## 🔴 Open items waiting on Nic (as of 2026-07-15)
 - **DIRFT** — Amy Spear (Onsite) asked (Tue 14 Jul) for maintenance options +
   pricing, with what each covers. → recurring-revenue opportunity; draft tiers.
-- **cmc.partners** — Matthew wants to progress a partnership / "new service"
-  offering (Luke cc'd). Fyxer proposed Thu 12:30–13:00. Reply/booking owed.
+- **CMC (Matt Cook + Luke McGowan)** — new advisory/cyber consultancy (never
+  installs). Partnership: bolt CMC "Connect"/"Protect" + cyber advisory into SMR
+  managed support (start with existing 35 sites); mutual referral; SMR PM/SA team
+  on CMC's Africa projects; Martin's Law emergency-signage crossover. Reply owed
+  + Fyxer proposed Thu 12:30–13:00 for a roundtable with Luke.
+  → **Waiting on CMC:** Matt still owes the **Connect/Protect PDF** (promised on
+    13 Jul call, not yet received) — needed to finalise joint pricing.
+  → Deliverable drafted: "SMR × CMC — How We Combine" (see scratchpad).
 - **Midwich export** — Sinead needs a commercial invoice showing SMR as exporter
   + GB EORI before the (paid) ICG screen ships. → Tam.
 - **BrightSign (ICGAM)** — renewal expires 17 Jul; order to
