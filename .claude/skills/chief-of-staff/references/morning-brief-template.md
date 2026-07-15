@@ -31,9 +31,9 @@ it rather than padding it. No preamble, no "good morning" essay — Nic wants si
 
 ---
 
-**💷 Money** (best-effort from finance system)
-{{Owed to you: £X across N invoices · Overdue: £Y · Oldest: <client>, <days> days}}
-{{or: "QuickBooks needs re-auth — cash line skipped today."}}
+**💷 Money** (best-effort)
+{{From CRM: open pipeline £X across N deals · £Y expected to close this month}}
+{{No live cash/AR feed yet — Xero to be connected (QuickBooks is US-only, N/A in UK).}}
 
 ---
 

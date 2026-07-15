@@ -32,7 +32,7 @@ that file when it updates so state persists across sessions/containers.
 | Meetings / notes | Granola | primary source of decisions & actions |
 | Email / calendar | Microsoft 365 | what's waiting on Nic; today's schedule |
 | Business knowledge | SMR Knowledge Base | personas, pricing, playbooks |
-| Finance | QuickBooks | cash / AR aging (tokens expire — re-auth in connector settings) |
+| Finance | Xero (planned) | QuickBooks is US-only (N/A in the UK); until Xero is connected, the money view comes from CRM pipeline |
 | Deal tracker | this repo's Supabase CRM | deals, contacts, activities, emails |
 
 ## Design principles (from Nic's own words)
