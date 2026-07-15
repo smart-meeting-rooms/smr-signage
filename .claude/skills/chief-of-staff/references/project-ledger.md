@@ -5,9 +5,20 @@ the end. Each project: **status · next action (owner) · blocker · waiting-on-
 key contacts · money · source**. Keep it factual and dated. Mark `(inferred)` when
 not directly stated and `(confirm)` when it needs verifying on the next real run.
 
-> **Last updated:** 2026-07-14 — *seeded by initial build from Granola notes
-> (mind-dump 23 Jun, strategy 4 Jul) + meeting list to 13 Jul. Statuses below are
-> as of those notes and must be refreshed on the first live run.*
+> **Last updated:** 2026-07-15 — *first live run. Refreshed from Granola (this
+> week) + Outlook inbox (last 2 days). QuickBooks unavailable (token expired), so
+> money line not refreshed this run.*
+
+## 🔴 Open items waiting on Nic (as of 2026-07-15)
+- **DIRFT** — Amy Spear (Onsite) asked (Tue 14 Jul) for maintenance options +
+  pricing, with what each covers. → recurring-revenue opportunity; draft tiers.
+- **cmc.partners** — Matthew wants to progress a partnership / "new service"
+  offering (Luke cc'd). Fyxer proposed Thu 12:30–13:00. Reply/booking owed.
+- **Midwich export** — Sinead needs a commercial invoice showing SMR as exporter
+  + GB EORI before the (paid) ICG screen ships. → Tam.
+- **BrightSign (ICGAM)** — renewal expires 17 Jul; order to
+  orders@brightsign.zendesk.com. Cover won't lapse immediately (Kaja). → Vlad.
+- **Baker St WAP** — Vlad to send Matt Scardina the updated proposal; confirm sent.
 
 ---
 
@@ -26,8 +37,13 @@ not directly stated and `(confirm)` when it needs verifying on the next real run
 - **Key contacts:** Gavin Harlow (Onsite), Kuli Assi (Tower42), Collins
   Construction, JCI team, Reliance High-Tech; Equiem (Natalie Menzies, Katy
   Austin); Savills (Richard Jones).
-- **Money:** (confirm).
-- **Source:** mind-dump 23 Jun; weekly progress mtgs 29 Jun & 13 Jul; Equiem mtgs.
+- **Money:** Habitech Sonance pro forma received 14 Jul (11× SON-40196 in stock,
+  11 on 2–3wk lead) — needs paying (Tam) to release stock.
+- **Update 15 Jul:** progress mtg held Mon 13 Jul; Gavin Harlow confirmed he'll
+  incorporate the void closures; MR1 power/data conduit site visit accepted by
+  Jess. JKSM (Dave Lomas) no-show Mon, on site Fri 11:00.
+- **Source:** mind-dump 23 Jun; weekly progress mtgs 29 Jun & 13 Jul; Equiem mtgs;
+  Outlook 14 Jul.
 
 ### 5 Churchill Place (reception screens / media wall) — **active**
 - **Status:** Install phase. Orders placed (screen via Midwich w/ Plus Care
