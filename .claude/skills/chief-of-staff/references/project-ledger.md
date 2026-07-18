@@ -5,9 +5,29 @@ the end. Each project: **status · next action (owner) · blocker · waiting-on-
 key contacts · money · source**. Keep it factual and dated. Mark `(inferred)` when
 not directly stated and `(confirm)` when it needs verifying on the next real run.
 
-> **Last updated:** 2026-07-15 — *first live run. Refreshed from Granola (this
-> week) + Outlook inbox (last 2 days). QuickBooks unavailable (token expired), so
-> money line not refreshed this run.*
+> **Last updated:** 2026-07-18 — *logged the week's wins (Nic's Sat 18 Jul list).
+> Money view built from CRM/notes; no live finance feed (QuickBooks US-only).*
+
+## 🏆 Wins — w/c 13 July 2026 (from Nic's 18 Jul list)
+
+**Closed / billed (~£24k in + recovered):**
+- **£8k recovered from Onsite** — work done but never invoiced; now billed. (Found money — the exact financial-visibility gap Nic keeps flagging.)
+- **£7k room booking won** — Tower 42.
+- **£5k ICGAM BSN (BrightSign) renewal — WON + invoiced** ✓ *(this was the item flagged in the 15 Jul brief as expiring 17 Jul — closed with a day to spare).*
+- **£3.7k Moelis wifi — won, over the line** ✓
+- Pipeline: **Chiswick Business Park — new opp, 3× meeting rooms, £3.5k–£7k** (Onsite).
+
+**Delivery / progression:**
+- **Tower 42 — PO finalised** (finance signed off) **+ cabling done** → back on track.
+- **5 Churchill Place video wall** — solution booked/done.
+- Moelis wireless-button opp progressed; meeting with Jonathan secured; Mike Castro
+  reset; Onsite lunch-&-learn booked (Jul/Aug); Vlad — CTO conversation started.
+
+**⭐ Strategic win of the week:**
+- **Mike (Onsite) agreed to SMR publishing a rate card / catalogue** rather than Onsite
+  selling it all themselves. This is the productised, channel-led, "run-it-like-an-IT-
+  company" model in Nic's strategy notes — same instinct as the CMC packaging. Follow
+  up: turn this into an actual published SMR rate card/catalogue for Onsite to sell from.
 
 ## 🔴 Open items waiting on Nic (as of 2026-07-15)
 - **DIRFT** — Amy Spear (Onsite) asked (Tue 14 Jul) for maintenance options +
@@ -23,10 +43,11 @@ not directly stated and `(confirm)` when it needs verifying on the next real run
     the revenue-share; agree referral terms both ways; pick a pilot site.
   → Deliverable drafted + updated with confirmed scope: "SMR × CMC — How We
     Combine" (scratchpad).
-- **Midwich export** — Sinead needs a commercial invoice showing SMR as exporter
-  + GB EORI before the (paid) ICG screen ships. → Tam.
-- **BrightSign (ICGAM)** — renewal expires 17 Jul; order to
-  orders@brightsign.zendesk.com. Cover won't lapse immediately (Kaja). → Vlad.
+- **Midwich export (ICG Paris, S5554977)** — commercial invoice now **completed** on
+  Midwich's template (SMR registered address + GB EORI GB443432121000 + sell-out
+  prices; goods value £810.65, DAP Paris). EORI confirmed valid by Midwich (Trinh).
+  → Remaining: Nic to **sign + send back**; Midwich to finalise gross weight/parcels.
+- **BrightSign (ICGAM) renewal — ✅ WON + invoiced (~£5k)** (18 Jul list). Closed.
 - **Baker St WAP** — Vlad to send Matt Scardina the updated proposal; confirm sent.
 
 ---
